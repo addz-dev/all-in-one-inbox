@@ -1,0 +1,44 @@
+name: Client-reported bug
+description: Report a bug that was reported directly from the AIOI app
+title: "[Client Bug]: "
+labels: ["bug", "client reported"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only for issues reported directly by clients from the app.
+        Keep details objective and remove any sensitive data before submitting.
+  - type: checkboxes
+    attributes:
+      label: Conduct
+      options:
+        - label: I confirm this report is respectful, constructive, and free of sensitive client data.
+          required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: Client-facing issue summary
+    validations:
+      required: true
+  - type: textarea
+    id: client-context
+    attributes:
+      label: Client context
+      description: What did the client report? Include only non-sensitive details.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction attempts
+      description: Steps attempted internally to reproduce the issue.
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      placeholder: e.g. 1.8.3
+    validations:
+      required: true

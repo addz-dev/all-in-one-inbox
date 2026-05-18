@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a bug in AIOI using the standard bug workflow
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug.
+        Please be respectful and provide clear, factual details so we can help quickly.
+  - type: checkboxes
+    attributes:
+      label: Conduct
+      options:
+        - label: I confirm this report is respectful, constructive, and includes accurate details.
+          required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short description of the issue
+      placeholder: What is going wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include exact steps so we can reproduce the problem.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      placeholder: e.g. 1.8.3
+    validations:
+      required: true
