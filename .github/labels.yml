@@ -1,0 +1,7 @@
+- name: bug
+  color: d73a4a
+  description: Something isn't working
+
+- name: client reported
+  color: 1d76db
+  description: Reported directly by a client from the app
