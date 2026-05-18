@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: AIOI support
+    url: https://github.com/addz-dev/all-in-one-inbox/issues
+    about: Please use the issue forms for bug reports and include all requested details.
